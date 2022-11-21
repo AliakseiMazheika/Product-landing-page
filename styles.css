@@ -1,122 +1,328 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="product landing page" content="product landing page" />
-    <link rel="stylesheet" href="styles.css">
-    <link
-      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-      />
-  </head>
-  <body>
-    <div id="page-wrapper">
-      <header id="header">
-        <div class="logo">
-          <img id="header-img" src="https://aliakseimazheika.github.io/Product-landing-page/mowing-machine.png" alt="product-landing-page-logo.png" />
-          </div>
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 30px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #eee;
+}
 
-      <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#features">Features</a></li>
-          <li><a class="nav-link" href="#how_it_works">How It Works</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
-        </ul>
-      </nav>
-    </header>
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
 
-    <section id="hero">
-      <h1>Gasoline lawn mowers for freeCodeCamp.com challenge</h1>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input name="email" id="email" type="email" placeholder="Enter your email adress" required/>
-      <input id="submit" type="submit" value="GET STARTED" class="btn" />
-      </form>
-      </section>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <div class="container"></div>
-      <section id="features">
-        <div class="grid">
-          <div class="icon">
-            <i class="fa fa-thermometer-full fa-5x" aria-hidden="true"></i>
-            </i>
-            </div>
-          <div class="desc">
-            <h1>Different Options</h1>
-            <p>The gasoline lawn mowers can operate in four modes: rear or side discharge, collection in a container, mulching. The cutting height is regulated by a central lever, which can be set to one of 7 positions - from 25 to 75 mm.</p>
-            </div>
-          </div>
-<div class="grid">
-          <div class="icon">
-            <i class="fa fa-cog fa-spin fa-5x fa-fw" aria-hidden="true"></i>
-            </div>
-          <div class="desc"> <h1>Fast Shipping</h1>
-            <p>We make sure you receive your mower as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-            </div>
-          </div>
-<div class="grid">
-          <div class="icon">
-            <i class="fa fa-3x fa-battery-full" aria-hiden="true">
-            </i>
-            </div>
-          <div class="desc"> <h1>Quality Assurance</h1>
-            <p>For every purchase you make, we will ensure there are no damages or faults.</p>
-            </div>
-          </div>
-        </section>
-    <section id="how_it_works" align="center">
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CQJ-2yD-kyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>
-      </section>
-    <section id="pricing">
-      <div class="product" id="tenor">
-      <div class="level">Gasoline mower ECO LG-435</div>
-      <h2>$700</h2>
-      <ol>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum.</li>
-      </ol>
-      <button class="btn">Select</button>
-      </div>
-<div class="product" id="bass">
-      <div class="level">Gazoline mower ECO LG-633</div>
-      <h2>$850</h2>
-      <ol>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum.</li>
-      </ol>
-      <button class="btn">Select</button>
-      </div>
-    <div class="product" id="valve">
-      <div class="level">Gazoline mower MAKITA - XS500</div>
-      <h2>$1200</h2>
-      <ol>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum.</li>
-      </ol>
-      <button class="btn">Select</button>
-      </div>
-    </section>
-    <footer>
-      <ul>
-        <li>
-          <a href="">Privacy</a>
-          </li>
-        <li>
-          <a href="">Terms</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-        </ul>
-      <span>Copyright 2022, Original Gazoline lawn mowers</span>
-      </footer>
-</div>
-  </body>
-</html>
+body {
+background-color: #eee;
+font-family: arabic, sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+.container {
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 4px green solid;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+}
+
+a {
+  font-size: 1.2em;
+  color: black;
+  list-style: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 20px;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 30px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+  list-style: none;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+    list-style: none;
+  }
+}
+
+nav > ul {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: row;
+  }
+}
+
+#hero > h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  margin-top: 50px;
+}
+
+#hero {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  text-align: center;
+  align-items: center;
+}
+
+#form {
+  display: inline-block;
+}
+
+#hero > input [type="email"] {
+  width: 100%;
+  padding: 5px;
+  position: center;
+}
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border: 0;
+  background-color: #f5c40f;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero input[type="submit"]:hover {
+  background-color: #aaa;
+  transition: background-color 1s;
+  
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+    align-items: center;
+  }
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: purple;
+  z-index: -1;
+}
+
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #fcc;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: orange;
+  color: green;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 10px 0;
+}
+
+.product > ol > li {
+  padding: 2px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #a5b;
+  font-weight: 900;
+}
+
+.product > button:hover {
+  background-color: green;
+  transition: background-color 0.1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #a2b4c2;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #111;
+}
