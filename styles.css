@@ -16,7 +16,7 @@ header {
   max-width: 30px;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
 * {
@@ -70,8 +70,6 @@ a {
 @media (max-width: 600px) {
   header {
     flex-wrap: wrap;
-    width: 100%;
-    min-height: 20px;
   }
 }
 
@@ -88,12 +86,7 @@ a {
 }
 
 .logo > img {
-  width: 100%;
-  height: 100%;
-  max-width: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin-left: 30px;
 }
@@ -166,7 +159,7 @@ nav > ul {
 }
 
 #hero input[type="submit"] {
-  max-width: 150px;
+  max-width: 100px;
   width: 100%;
   height: 50px;
   margin: 10px 0;
@@ -214,7 +207,7 @@ nav > ul {
 }
 
 @media (max-width: 550px) {
-  #features .desc {
+  #features .desc{
     width: 100%;
     text-align: center;
     padding: 0;
