@@ -13,10 +13,10 @@ header {
 #header-img {
   width: 100%;
   height: 100%;
-  max-width: 300px;
+  max-width: 50px;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 200px;
 }
 
 * {
@@ -196,7 +196,8 @@ nav > ul {
   justify-content: center;
   height: 125px;
   width: 20vw;
-  color: darkorange;
+  color: purple;
+  z-index: -1;
 }
 
 
@@ -233,6 +234,7 @@ nav > ul {
 #how-it-works > iframe {
   max-width: 560px;
   width: 100%;
+  display: flex;
 }
 
 #pricing {
